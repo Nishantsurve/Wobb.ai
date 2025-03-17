@@ -13,8 +13,8 @@ const App = () => {
     <div>
       <Navbar />
       <HeroSection />
-      <Features />
       <CampaignList/>
+      <Features />
       <CampaignManager />
       <Reviews />
       <FAQ />
