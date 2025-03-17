@@ -1,0 +1,122 @@
+/* CampaignManager.css */
+.campaign-manager {
+  padding: 2rem;
+  text-align: center;
+}
+
+.steps-nav {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  scroll-behavior: smooth; /* Smooth scrolling */
+  padding-bottom: 1rem; /* Add space for scrollbar */
+  -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari, and Opera */
+.steps-nav::-webkit-scrollbar {
+  display: none;
+}
+
+.step {
+  flex: 0 0 auto; /* Prevent steps from shrinking */
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+.step.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.step-content {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.content-left {
+  flex: 1;
+  text-align: left;
+}
+
+.content-left h3 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: #002244; /* Dark blue color for the title */
+}
+
+.content-left p {
+  font-size: 1rem;
+  color: #555; /* Gray color for the description */
+  margin-bottom: 1.5rem;
+}
+
+.content-left button {
+  background-color: #007bff;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.content-right {
+  flex: 1;
+}
+
+.content-right img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px; /* Rounded corners for the image */
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 768px) {
+  .steps-nav {
+    flex-wrap: nowrap; /* Ensure steps stay in a single row */
+  }
+
+  .step-content {
+    flex-direction: column; /* Stack content vertically on mobile */
+    text-align: center;
+  }
+
+  .content-left {
+    text-align: center; /* Center-align text on mobile */
+  }
+  .content-left button {
+    background-color: #007bff;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  .content-left button{
+    width: 20px;
+  }
+  .content-left p {
+    font-size: 2rem;
+    color: #555; /* Gray color for the description */
+    margin-bottom: 1.5rem;
+  }
+
+  .content-right img {
+    max-width: 100%; /* Ensure the image fits the screen */
+  }
+
+  .content-left button {
+    width: 100%; /* Full-width button on mobile */
+    padding: 1rem; /* Larger padding for better touch interaction */
+  }
+}

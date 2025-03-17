@@ -1,0 +1,38 @@
+/* FAQ.css */
+.faq {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .accordion {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .accordion-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+  
+  .accordion-header {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    cursor: pointer;
+  }
+  
+  .accordion-body {
+    padding: 1rem;
+    background-color: white;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .faq {
+      padding: 1rem;
+    }
+  
+    .accordion {
+      max-width: 100%;
+    }
+  }

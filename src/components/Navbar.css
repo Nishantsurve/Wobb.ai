@@ -1,0 +1,45 @@
+/* Navbar.css */
+.navbar {
+    padding: 1rem 2rem;
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .navbar-logo {
+    width: 40px;
+    height: auto;
+  }
+  
+  .navbar-title {
+    font-weight: bold;
+    font-size: 25px;
+    color: #002244;
+  }
+  
+  .navbar-nav {
+    gap: 1rem;
+  }
+  
+  .navbar-buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .navbar {
+      padding: 0.5rem 1rem;
+    }
+  
+    .navbar-nav {
+      margin-top: 1rem;
+    }
+  
+    .navbar-buttons {
+      margin-top: 1rem;
+    }
+  }

@@ -1,0 +1,82 @@
+/* Features.css */
+.features {
+    padding: 2rem;
+    text-align: center;
+    background-color: #f8f9fa; /* Light background for the section */
+  }
+  
+  .features h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #002244; /* Dark blue color for the heading */
+  }
+  
+  .features-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem; /* Spacing between feature cards */
+  }
+  
+  .feature-card {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    flex: 1 1 300px; /* Flexible width, minimum 300px */
+    max-width: 350px; /* Maximum width for larger screens */
+    text-align: left;
+  }
+  
+  .feature-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #007bff; /* Blue color for feature titles */
+  }
+  
+  .feature-card p {
+    font-size: 1rem;
+    color: #555; /* Gray color for the description */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .features {
+      padding: 1rem;
+    }
+  
+    .features h2 {
+      font-size: 1.75rem;
+    }
+  
+    .feature-card {
+      flex: 1 1 100%; /* Full width on smaller screens */
+      max-width: 100%;
+    }
+  
+    .feature-card h3 {
+      font-size: 1.25rem;
+    }
+  
+    .feature-card p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .features h2 {
+      font-size: 1.5rem;
+    }
+  
+    .feature-card {
+      padding: 1rem;
+    }
+  
+    .feature-card h3 {
+      font-size: 1.1rem;
+    }
+  
+    .feature-card p {
+      font-size: 0.85rem;
+    }
+  }
