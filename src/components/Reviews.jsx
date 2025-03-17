@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./Reviews.css";
 const reviews = [
   {
     name: "David K",

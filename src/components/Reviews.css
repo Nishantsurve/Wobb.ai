@@ -1,1 +1,92 @@
 
+/* Reviews.css */
+.reviews {
+    padding: 2rem;
+    text-align: center;
+    background-color: #f9f9f9; /* Light background for the section */
+  }
+  
+  .reviews h2 {
+    font-size: 2rem;
+    color: #002244; /* Dark blue color */
+    margin-bottom: 2rem;
+  }
+  
+  .review-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  .review-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    max-width: 300px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .review-card p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  .review-card h4 {
+    font-size: 1.25rem;
+    color: #002244;
+    margin-bottom: 0.5rem;
+  }
+  
+  .review-card small {
+    font-size: 0.875rem;
+    color: #666;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .reviews {
+      padding: 1rem;
+    }
+  
+    .reviews h2 {
+      font-size: 1.75rem;
+    }
+  
+    .review-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .review-card {
+      max-width: 100%;
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .reviews h2 {
+      font-size: 1.5rem;
+    }
+  
+    .review-card p {
+      font-size: 0.9rem;
+    }
+  
+    .review-card h4 {
+      font-size: 1.1rem;
+    }
+  
+    .review-card small {
+      font-size: 0.8rem;
+    }
+  }
