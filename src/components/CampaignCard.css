@@ -1,0 +1,126 @@
+/* CampaignCard.css */
+.campaign-card {
+    width: 300px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .campaign-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .campaign-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  
+  .card-content {
+    padding: 16px;
+  }
+  
+  .campaign-card h3 {
+    font-size: 18px;
+    margin: 0 0 8px;
+    color: #333;
+  }
+  
+  .campaign-card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 16px;
+  }
+  
+  /* Payout Details Styling */
+  .payout-details {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+  
+  .payout-icon {
+    font-size: 20px;
+    animation: bounce 1s infinite; /* Add animation to the icon */
+  }
+  
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+  
+  /* Circular Progress Bar Styling */
+  .hiring-progress {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .circular-progress {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e0e0e0; /* Gray background for the unfilled portion */
+  }
+  
+  .progress {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: conic-gradient(#007bff 0%, #007bff 50%, #e0e0e0 50%, #e0e0e0 100%); /* Default gradient */
+  }
+  
+  .progress-text {
+    position: absolute;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .campaign-card {
+      width: 240px;
+    }
+  
+    .campaign-card img {
+      height: 150px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .campaign-card {
+      width: 200px;
+    }
+  
+    .campaign-card img {
+      height: 120px;
+    }
+  
+    .campaign-card h3 {
+      font-size: 16px;
+    }
+  
+    .campaign-card p {
+      font-size: 12px;
+    }
+  }

@@ -34,6 +34,49 @@
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
   
+  .reviews h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #002244;
+    margin-bottom: 1.5rem;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .reviews h2::before {
+    
+    margin-right: 0.5rem;
+  }
+  
+  .reviews h2::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, #007bff, #00bfff);
+    transform: translateX(-50%);
+    border-radius: 2px;
+    animation: underline-grow 0.5s ease-out;
+  }
+  
+  @keyframes underline-grow {
+    from {
+      width: 0;
+    }
+    to {
+      width: 60px;
+    }
+  }
+  
+  .reviews h2:hover::after {
+    width: 100%;
+    transition: width 0.3s ease;
+  }
+
   .review-card p {
     font-size: 1rem;
     color: #333;
