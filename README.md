@@ -12,6 +12,9 @@ A responsive web version of the Wobb App homepage for our influencer portal
 ## Live 
 https://nishant-wobbai.netlify.app/
 
+## Demo Video
+https://drive.google.com/drive/folders/1w69XBhjZlm92j96OjRLAFzc224_6tJFb?usp=sharing
+
 ## Screenshots
 Include relevant screenshots showcasing key parts of the app.
 
