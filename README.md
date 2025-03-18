@@ -3,11 +3,14 @@
 # React.js Project
 
 ## Project Overview
-A responsive web version of the Wobb App homepage for our influencer portat
+A responsive web version of the Wobb App homepage for our influencer portal
 
 ## Features
 - List the core functionalities of the app
 - Highlight any special features or integrations
+
+## Live 
+https://nishant-wobbai.netlify.app/profile
 
 ## Screenshots
 Include relevant screenshots showcasing key parts of the app.
