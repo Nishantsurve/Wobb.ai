@@ -15,7 +15,7 @@ Include relevant screenshots showcasing key parts of the app.
 ![Screenshot 1](src/images/Screenshot%20(531).png)
 ![Screenshot 1](src/images/Screenshot%20(532).png)
 ![Screenshot 1](src/images/Screenshot%20(533).png)
-![Screenshot 1](src/images/Screenshot%20(534).png)
+![Screenshot 1](src/images/Screenshot%20(535).png)
 ![Screenshot 1](src/images/Screenshot%20(536).png)
 
 ## Installation & Setup
