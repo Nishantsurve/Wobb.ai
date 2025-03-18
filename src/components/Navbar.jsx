@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"; // Import Link
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -45,9 +46,9 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="/">
+              <Link className="nav-link active" aria-current="page" to="/">
                 Home
-              </a>
+              </Link>
             </li>
 
             {/* Features Dropdown */}
@@ -62,14 +63,14 @@ const Navbar = () => {
               </button>
               <ul className="dropdown-menu">
                 <li>
-                  <a className="dropdown-item" href="/">
+                  <Link className="dropdown-item" to="/">
                     Automated Campaign Manager
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="/">
+                  <Link className="dropdown-item" to="/">
                     Influencer Discovery
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </li>
@@ -88,29 +89,29 @@ const Navbar = () => {
                 <div className="row">
                   <div className="col-md-6">
                     <li>
-                      <a className="dropdown-item" href="/">
+                      <Link className="dropdown-item" to="/">
                         Blog
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="/">
+                      <Link className="dropdown-item" to="/">
                         Customer
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="/">
+                      <Link className="dropdown-item" to="/">
                         Help Centre
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="/">
+                      <Link className="dropdown-item" to="/">
                         Become an Affiliate
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="/">
+                      <Link className="dropdown-item" to="/">
                         Integrations
-                      </a>
+                      </Link>
                     </li>
                   </div>
                 </div>
@@ -118,9 +119,9 @@ const Navbar = () => {
             </li>
 
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="/">
-                Pricing
-              </a>
+              <Link className="nav-link active" aria-current="page" to="/profile">
+                Profile
+              </Link>
             </li>
           </ul>
         </div>
